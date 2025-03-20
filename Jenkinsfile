@@ -33,7 +33,7 @@ pipeline {
             steps{
                 sh 'docker push\
                  761018893766.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
-                 sh 'docker push\
+                sh 'docker push\
                  761018893766.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:v1.$BUILD_NUMBER'
             }
         }
