@@ -25,7 +25,7 @@ pipeline {
             steps{
                 sh 'docker tag jenkins-ci:latest\
                  761018893766.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
-                 sh 'docker build -t imageversion \
+                sh 'docker tag -t imageversion \
                   761018893766.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:v1.$BUILD_NUMBER'
             }
         } 
